@@ -1,0 +1,1059 @@
+
+
+header
+{
+
+    width: 1400px;
+    background-color: #F0F2F6;
+    margin-left: 280px;
+}
+
+.logo
+{
+    position: absolute;
+    width: 61.09px;
+    height: 19px;
+    top: 44px;
+}
+.up
+{
+    display: flex;
+    flex-direction:row;
+    justify-content: flex-end;
+    margin-right: 40px;
+}
+
+.up .two 
+{
+    text-align: center;
+    width: 152px;
+    padding: 46px 0px 0px 0px; 
+    text-decoration: none;
+    font-family:'Raleway';
+    font-size: 16px;
+    line-height: 19px;
+    color: black;
+    border: solid transparent 2px;
+
+}
+
+.up .two:hover
+{
+    border-top: #0065FC solid 2px;
+    color: #0065FC;
+    cursor: pointer;
+
+}
+
+.intro h1
+{
+    display: flex;
+    font-family:'Raleway';
+    font-size: 22px;
+    font-style: bold;
+    line-height: 26px;
+    color: black;
+    height: 26px;
+    margin-top: 100px;
+    
+}
+
+.intro h2
+{
+    display: flex;
+    width: 350px;
+    height: 19px;
+    font-family:'Raleway';
+    font-size: 16px;
+    font-style: normal;
+    line-height: 19px;
+}
+
+.search 
+{
+    background: #F2F2F2;
+    display: flex;
+    flex-direction:row;
+    align-items: center;
+    width: 300px;
+    margin-top: 20px ;
+}
+
+.search .location 
+{
+    cursor: pointer;
+    border: 3.3px solid rgb(197, 196, 196);
+    border-radius: 15px 0px 0px 15px;
+    background-color: rgb(197, 196, 196);
+    color: black;
+    text-decoration: none;
+    height: 18px;
+    width: 14px;
+    padding-top: 5px;
+    padding-left: 15px;
+    padding-bottom: 5px;
+
+}
+
+.location i
+{
+    display: flex;
+    margin-right: 12px;
+    margin-top: 2px;
+    justify-content: center;
+    background-color: rgb(197, 196, 196);
+    font-size: 14px;
+}
+
+.search p a
+{
+    padding: 5px;
+    background-color: #0065FC;
+    border: 3px solid #0065FC;
+    border-radius: 0px 15px 15px 0px;
+    color: #F0F2F6;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.search input
+{
+    border:rgb(231, 231, 231) solid 1px ;
+    line-height: 31px;   
+}
+
+
+nav
+{
+   display: flex;
+   
+}
+
+
+nav ul
+{
+    margin-top: 31px ;
+    display: flex;
+    width: 914px;
+    align-items:center;
+    flex-direction: row;
+    padding-left: 0px;
+}
+
+nav li 
+{
+    list-style-type: none;
+
+}
+
+nav li a 
+{
+    
+    width: 226px;
+    align-items: center;
+    text-decoration: none;
+    color: black;
+    font-family:'Raleway';
+    font-size: 17px;
+    line-height: 20px;
+    border: solid rgb(204, 204, 204) 2px;
+    border-radius: 25px;
+    padding-left: 5px ;
+    margin-left: 20px ;
+    padding-right: 10px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+}
+
+nav li a:hover
+{
+    background-color: #bbd4fa;
+}
+nav ul li i
+{
+    color: #0065FC;
+    margin-right: 10px;
+    margin-left: 10px ;
+    background: none;
+}
+
+nav h2
+{
+    display: flex;
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 21px;
+    color: #000000;
+
+}
+
+.info 
+{
+    display: flex;
+    align-items: center;
+    margin-top: 3px;
+    margin-bottom:30px; 
+}
+
+.info i
+{
+    margin-right: 10px;
+    color: #0065FC;
+    border: 1px solid rgb(167, 166, 166);
+    border-radius: 50%;
+    padding: 6px 6px 6px 6px;
+    height: 12px;
+    width: 12px;
+    text-align: center;
+    font-size: 12px;
+}
+.info p
+{
+    font-family: 'Raleway';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 19px;
+color: #000000;
+}
+body
+{
+    background-color: #F0F2F6;
+    width: 1400px;  
+    margin: 0px;
+}
+
+.Marseille
+{
+    display: flex;
+    justify-content: space-between;
+    width: 1340px;
+    margin-left: 280px;
+}
+
+.Marseille .one
+{
+    width: 880px;
+    border-radius: 20px;
+    background-color: rgb(212, 212, 212);
+    padding: 28px 40px 0px 40px;
+}
+
+.Marseille .carte
+{
+    display: flex;
+    justify-content: space-between ;
+    flex-wrap:wrap;
+    cursor: pointer;
+}
+.Marseille .one .titre1
+{
+    display: flex;
+    font-family: 'Raleway';
+    font-style: normal;
+    font-size: 22px;
+    color: #000000;
+  
+}
+
+.Marseille .one img
+{
+    height:109px;
+    width: 239.5px;
+    border: 4px solid #FFFFFF;
+    border-radius: 20px 20px 0px 0px;
+}
+
+.Marseille .one  h3
+{ 
+    display:flex ;
+    margin-left: 16px;
+    width: 204px;
+    height: 15px;
+    font-family: 'Raleway';
+    font-style: normal;
+    font-size: 14px;
+    line-height: 16px;
+    color: #000000;
+    text-decoration: none;
+}
+
+.Marseille .one .hun
+{
+    display: flex;
+    margin: 0px;
+    margin-left: 16px;
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 19px;
+    color: #000000;
+    text-decoration-line: none;
+}
+
+.Marseille .one .stars 
+{
+    width: 90px;
+    color: #0065FC;
+    margin-left: 15px;
+    font-size: 12px;
+    
+}
+
+.fa-grey
+{
+    color: gray;
+}
+
+
+
+.Marseille .one .a
+{
+    filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
+    height: 199px;
+    width: 246px;
+    border-radius: 20px;
+    background: rgba(255, 255, 255, 1);
+    width: 30%;
+    margin-top: 26px;
+}
+
+.Marseille .one h2
+{
+  display: flex;
+  font-family: 'Raleway';
+  font-style: normal;
+  font-size: 18px;
+  line-height: 21px;
+  color: #000000;
+  margin-top: 40px;
+
+}
+
+.Marseille .second
+{
+    width: 420px;
+    border-radius: 20px;
+    background-color:rgb(212, 212, 212) ;
+    margin-left: 40px;
+    padding-bottom: 30px;
+}
+
+.Marseille .second .cartedeux .chart
+{
+    color: #0065FC;
+    display: flex;
+    margin-top:46px ;
+    margin-right:42px ;
+    
+
+}
+.Marseille .cartedeux .titre 
+{
+    display: flex;
+    margin-top: 41px;
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 26px;
+    color: #000000;
+    margin-left: 37px;
+}
+
+.Marseille .cartedeux 
+{
+    display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	flex-flow: wrap;
+    width: auto;
+}
+
+.Marseille .cartedeux a
+
+{
+    cursor: pointer;
+	display: flex;
+}
+
+
+.Marseille .b
+{
+    filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
+    height: 144px;
+    width: 343px;
+    border-radius: 20px;
+    background: rgba(255, 255, 255, 1);
+    width: 80%;
+    margin-top: 26px;
+    margin-left: 37px;
+    display: flex;
+}
+
+
+.Marseille .second img 
+{
+    object-fit: cover;
+    height: 135px;
+    width: 120px;
+    border: 4px solid #FFFFFF;
+    border-radius: 20px 0px 0px 20px;
+}
+
+
+.Marseille .c img
+{
+    max-width: 100%;
+    height: auto;  
+}
+
+.colonne
+{
+    padding-left: 15px;
+}
+
+
+.Marseille .cartedeux .colonne h1
+{
+    margin-top: 16px;
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    color: #000000;
+    margin-bottom: 0px;
+}
+
+.colonne .price
+{
+    width: 169px;
+  height: 60px;
+  margin-bottom: 25px;
+}
+
+.Marseille .cartedeux .colonne h2
+{
+    width: 169px;
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    color: #000000;
+    margin-top: 0px;
+}
+
+.cartedeux .colonne .stars
+{
+    width: 90px;
+    color: #0065FC;
+    margin-top: 29%;
+    font-size: 12px;  
+}
+
+
+.fa-grey
+{
+    color: gray;
+}
+
+.activites
+{
+    display: flex;
+    width: 1337px;
+    margin-left: 280px;
+    flex-direction: column;
+    margin-top: 55px;
+}
+
+.activites .titre-activites
+{
+    justify-content: space-between;
+    display: flex;
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 26px;
+    width: 250px;
+    color: #000000;
+}
+
+.card-activites
+{
+    display: flex;
+    flex-direction: row; 
+}
+.card-activites .vieux-port
+{
+    filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
+    height: 444.5082092285156px;
+    width: 302px;
+    border-radius: 20px;
+    background-color: white;
+    background-image: url("image/Images Booki/activites/4_small/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 445px;
+    width: 302px;
+    cursor: pointer;
+}
+.card-activites .fort
+{
+    filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
+    height: 444.5082092285156px;
+    width: 302px;
+    border-radius: 20px;
+    background-color: white;
+    margin-left: 43px;
+    background-image: url("image/Images Booki/activites/4_small/paul-hermann-QFTrLdQIRhI-unsplash.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 445px;
+    width: 302px;
+    cursor: pointer;
+}
+.card-activites .parc
+{
+    filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
+    height: 444.5082092285156px;
+    width: 302px;
+    left: 0px;
+    top: 0px;
+    border-radius: 20px;
+    background-color: white;
+    margin-left: 43px;
+    background-image: url("image/Images Booki/activites/4_small/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 445px;
+    width: 302px;
+    cursor: pointer;
+}
+.card-activites .notre-dame 
+{
+    filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
+    height: 444.5082092285156px;
+    width: 302px;
+    border-radius: 20px;
+    margin-left: 43px;
+    background-image: url("image/Images Booki/activites/4_small/florian-wehde-xW9e8gdotxI-unsplash.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 445px;
+    width: 302px;
+    cursor: pointer;
+}
+
+
+.activites .card-activites  h1
+{
+    display: flex;
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 19px;
+    color: #000000;
+    background-color: white;
+    padding: 23px;
+    width:302px;
+    cursor: pointer;
+    border-radius: 0px 0px 20px 20px;
+}
+
+.activites .card-activites a
+{
+  
+  display: flex;
+  margin-top: 389px;
+
+}
+
+footer
+{
+    display: flex;
+    width: 1339px;
+    margin-left: 280px;
+    margin-top:60px ;
+}
+
+.foot
+{
+    height: 220px;
+    background-color: rgb(212, 212, 212);
+    display: flex;
+    justify-content: space-between;
+    margin-top: 25px;
+}
+
+.foot .conditions
+{
+    display: flex;
+    flex-direction: column;
+}
+
+footer .foot 
+{  
+    display: flex;
+    width: 1339px;
+}
+
+.foot .conditions 
+{
+
+    text-decoration: none;
+    color: #000000;
+    font-family:'raleway';
+    margin-top: 12px;
+    justify-content: space-between;
+    
+}
+
+.foot h1
+{
+    display: flex;
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 21px;
+    color: #000000;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+
+.foot .propos 
+{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    margin-top: 45px;
+    margin-left: 70px;
+}
+
+.foot nav
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: auto; 
+}
+
+.foot .marge
+{
+    margin-left: 230px;
+}
+
+
+
+/*tablette*/
+@media screen and (max-width: 1024px)
+ {
+    header
+    {
+        margin-left: 20px;
+        flex-direction: column;   
+    }
+
+    .up
+    {
+        justify-content: center;
+        margin-left: 350px;
+    }
+    
+  .Marseille 
+  { 
+    flex-direction: column;
+    margin-left: 20px;
+    justify-content: space-between;
+  }
+
+  .Marseille .one img
+  {
+    width: 97%;
+  }
+
+  .Marseille .second
+  {
+    margin-top: 20px;
+    width: 960px;
+    height: 258px;  
+    margin-left: 0px; 
+  }
+
+
+
+
+ .Marseille .cartedeux 
+ {
+    display: flex;
+    flex-direction: row;
+    width: 960px;
+    justify-content: space-between;
+ }
+
+.cartedeux img
+{
+    object-fit: cover;
+}
+
+.cartedeux a 
+{
+    width: 90%;
+}
+ .cartedeux .b
+ {
+    flex-flow: none;
+    width: auto;
+    margin: auto;
+    margin-top: 25px;
+    
+ }
+ .colonne .price 
+ {
+    width: 140px;
+ }
+ .Marseille .cartedeux .colonne h2
+{
+    width: 93%;
+}
+.Marseille .cartedeux h1
+{
+    width: 80%;
+    margin-bottom: 10px;
+}
+
+.cartedeux .colonne .stars
+{
+    margin-top: 44px;  
+}
+.cartedeux .colonne
+{
+    flex-direction: column;
+    width: 40%;
+}
+
+
+.activites
+{
+    width: 960px;
+    margin-left: 20px;
+    margin-top: 20px;
+}
+.card-activites .vieux-port
+{
+    width: 200px;
+    height: 333px;
+}
+.card-activites .fort
+{
+    width: 200px;
+    height: 333px;
+}
+.card-activites .parc a
+{
+width: 100%;
+height: 100px;
+}
+.activites .card-activites .parc h1
+{
+padding-top: 10px;
+}
+.activites .card-activites .notre-dame h1
+{
+padding-top: 10px;
+}
+.card-activites .notre-dame a
+{
+width: 100%;
+height: 100px;
+}
+.card-activites .parc
+{
+    width: 200px;
+    height: 333px;
+}
+.card-activites .notre-dame
+{
+    width: 200px;
+    height: 333px;
+}
+
+.activites .card-activites  a
+{
+    margin-top: 255.5px;
+    display: flex;
+}
+.activites .card-activites  h1
+{
+    padding:19px;
+}
+
+footer
+{
+    margin-left: 20px;
+    width: 960px;
+}
+
+.foot .marge
+{
+    margin-left:95px;
+}
+
+ }
+
+
+
+
+
+
+
+ /*mobile*/
+@media screen and (max-width: 375px)
+{
+
+header
+{
+    margin-left: 0;
+    flex-direction: column;
+}
+nav .up
+{
+    margin-top: 0px;
+}
+.up
+{   
+    justify-content: flex-start;
+    margin-left: 0px;
+    margin-top: 88px; 
+}
+.up .two 
+{
+    width: 187px;
+    padding-bottom: 23px;
+    border-bottom: rgb(190, 190, 190) solid 2px;
+}
+.up .two:hover
+{
+    border-bottom: #0065FC solid 2px;
+    border-top: none;
+}
+.logo
+{
+    margin-left: 160px;
+    padding-bottom: 100px;
+    position: absolute;
+    top: 21px;
+    
+}
+
+.intro h1
+{
+    margin-top: 55px;
+    width: 25%;
+    height: auto;
+    margin-left: 10px;
+}
+.intro h2
+{
+   margin-left: 10px;
+}
+
+.search
+{
+    margin-left: 12px;
+}
+
+nav h2
+{
+    position: absolute;
+    margin-bottom: 10%;
+    margin-top: -22%;
+    margin-left: 5.5%;
+}
+
+nav ul
+{
+    display: flex;
+    flex-wrap: wrap;
+    width: 29%;
+    flex-direction: row;
+    margin-top: 4%;
+}
+nav li a
+{
+    display: flex;
+    width: 84%;
+    flex-flow: wrap;
+    margin-top: 10px;
+    margin-left: 16px;
+    font-size: 16px;
+}
+
+.info
+{
+    margin-left: 20px;
+    width: 25%;
+    margin-bottom: 0px;
+}
+
+.info i
+{
+    margin-bottom: 13px;
+}
+
+.Marseille
+{
+    margin-left: 0px;
+    flex-direction: column-reverse;
+    
+}
+.Marseille .carte
+{
+    flex-direction: column;
+    height: auto;
+    
+}
+
+.Marseille .one .a
+{
+    justify-content: space-between;
+    width: 35%;
+}
+
+.Marseille .one
+{
+    padding-left: 0px;
+    padding-bottom: 15px;
+}
+
+.Marseille .a img
+{
+    object-fit: cover;
+}
+
+.Marseille .a
+{
+    width: auto;
+    margin-left: 30px;
+}
+
+.Marseille .one h2
+{
+    margin-left: 30px;
+}
+.Marseille .one h1
+{
+    margin-left: 30px;
+}
+.Marseille .second
+{
+    margin-bottom: 15px;
+   height: auto;
+    
+}
+.Marseille .cartedeux .titre
+{
+    width: 66%;
+    margin-left: 20px;
+    
+}
+.Marseille .second .cartedeux .chart
+{
+    margin-right: 7%;
+}
+.Marseille .cartedeux
+{
+    display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	flex-flow: wrap;
+    width: 37%;
+    
+}
+.cartedeux .b
+{
+    margin-left: 6%;
+    width: 121%;
+}
+
+.activites
+{
+   
+    margin-left: 0px;
+}
+
+.card-activites
+{
+    width: 374px;
+    flex-direction: column;
+}
+.card-activites .vieux-port
+{
+    height: 200px;
+    width: 334px;
+    margin-left:15px;
+    margin-bottom: 14px;
+}
+.card-activites .fort
+{
+    height: 200px;
+    width: 334px;
+    margin-left:15px;
+    margin-bottom: 34px;
+}
+.card-activites .parc
+{
+    height: 200px;
+    width: 334px;
+    margin-left:15px;
+    margin-bottom: 34px;
+}
+.card-activites .notre-dame
+{
+    height: 200px;
+    width: 334px;
+    margin-left:15px;
+    margin-bottom: 24px;
+}
+.activites .card-activites a
+{
+    margin-top: 144.5px;
+}
+.activites .titre-activites
+{
+    width: 180px;
+    margin-left: 15px;
+}
+
+
+footer
+{
+    width: auto;
+    margin-left: 0px;
+}
+footer .foot
+{
+    width: 374px;
+    height: auto;
+}
+.foot nav
+{
+    margin-bottom: 25px;
+}
+.foot .propos
+{
+    margin-left: 28px;
+    flex-direction: column;
+}
+.foot .marge
+{
+    margin-left: 0px;
+}
+
+}
+
