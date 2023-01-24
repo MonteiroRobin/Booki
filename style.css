@@ -1,4 +1,3 @@
-
 body
 {
     background-color: #F0F2F6;
@@ -147,7 +146,6 @@ nav ul
 nav li 
 {
     list-style-type: none;
-
 }
 
 nav li a 
@@ -181,7 +179,7 @@ nav ul li i
     background: none;
 }
 
-nav h2
+nav .filtre
 {
     display: flex;
     font-family: 'Raleway';
@@ -216,11 +214,11 @@ nav h2
 .info p
 {
     font-family: 'Raleway';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 19px;
-    color: #000000;
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 19px;
+color: #000000;
 }
 
 .Marseille
@@ -322,14 +320,14 @@ nav h2
 
 .Marseille .one .plus
 {
-    display: flex;
-    font-family: 'Raleway';
-    font-style: normal;
-    font-size: 21px;
-    line-height: 21px;
-    color: #000000;
-    margin-top: 40px;
-    cursor: pointer;
+  display: flex;
+  font-family: 'Raleway';
+  font-style: normal;
+  font-size: 21px;
+  line-height: 21px;
+  color: #000000;
+  margin-top: 40px;
+  cursor: pointer;
 
 }
 
@@ -566,7 +564,7 @@ footer .foot
     
 }
 
-.foot h2
+.foot p
 {
     display: flex;
     font-family: 'Raleway';
@@ -579,7 +577,7 @@ footer .foot
     justify-content: flex-start;
 }
 
-.foot section
+.foot div
 {
     display: flex;
     justify-content: space-between;
@@ -655,6 +653,12 @@ footer .foot
     width: 960px;
     margin-left: 0px; 
   }
+
+  .Marseille .one .plus
+  {
+    padding-bottom: 3.5%;
+  }
+
 aside
 {
     flex-flow: wrap;
@@ -787,6 +791,8 @@ footer
  /*mobile*/
 @media screen and (max-width: 375px)
 {
+
+
 body
 {
     width: 375px;  
@@ -936,7 +942,7 @@ nav li a
 }
 .Marseille .second
 {
-   margin-bottom: 15px;
+    margin-bottom: 15px;
    height: auto;
     
 }
@@ -950,9 +956,9 @@ nav li a
 .Marseille .cartedeux
 {
     display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    flex-flow: wrap;
+	flex-direction: column;
+	justify-content: space-between;
+	flex-flow: wrap;
     width: 37%;
     
 }
@@ -1004,17 +1010,16 @@ nav li a
     padding-right: 14%;
     padding-bottom: 3%;
 }
-	
 .activites .card-activites h2
 {
     height: 15%;
-	padding-top: 5%;
-	padding-left: 6%;
-	padding-right: 14%;
+padding-top: 5%;
+padding-left: 6%;
+padding-right: 14%;
 }
 
 
-.foot section
+.foot div
 {
     flex-direction: column;
     margin-left: 5%;
