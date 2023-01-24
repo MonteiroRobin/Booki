@@ -1,11 +1,15 @@
 
+body
+{
+    background-color: #F0F2F6;
+    width: 1400px;  
+    margin: 0 auto;
+}
 
 header
 {
-
     width: 1400px;
     background-color: #F0F2F6;
-    margin-left: 280px;
 }
 
 .logo
@@ -15,6 +19,7 @@ header
     height: 19px;
     top: 44px;
 }
+
 .up
 {
     display: flex;
@@ -58,7 +63,7 @@ header
     
 }
 
-.intro h2
+.intro p
 {
     display: flex;
     width: 350px;
@@ -82,16 +87,15 @@ header
 .search .location 
 {
     cursor: pointer;
-    border: 3.3px solid rgb(197, 196, 196);
-    border-radius: 15px 0px 0px 15px;
     background-color: rgb(197, 196, 196);
+    border-radius: 15px 0px 0px 15px;
     color: black;
     text-decoration: none;
     height: 18px;
     width: 14px;
-    padding-top: 5px;
+    padding-top: 7.7px;
     padding-left: 15px;
-    padding-bottom: 5px;
+    padding-bottom: 7.7px;
 
 }
 
@@ -212,17 +216,11 @@ nav h2
 .info p
 {
     font-family: 'Raleway';
-font-style: normal;
-font-weight: 400;
-font-size: 16px;
-line-height: 19px;
-color: #000000;
-}
-body
-{
-    background-color: #F0F2F6;
-    width: 1400px;  
-    margin: 0px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    color: #000000;
 }
 
 .Marseille
@@ -230,7 +228,7 @@ body
     display: flex;
     justify-content: space-between;
     width: 1340px;
-    margin-left: 280px;
+   
 }
 
 .Marseille .one
@@ -260,13 +258,13 @@ body
 
 .Marseille .one img
 {
-    height:109px;
-    width: 239.5px;
+    height: 53%;
+    width: 96.5%;
     border: 4px solid #FFFFFF;
     border-radius: 20px 20px 0px 0px;
 }
 
-.Marseille .one  h3
+.Marseille .one p
 { 
     display:flex ;
     margin-left: 16px;
@@ -293,6 +291,7 @@ body
     color: #000000;
     text-decoration-line: none;
 }
+
 
 .Marseille .one .stars 
 {
@@ -321,15 +320,16 @@ body
     margin-top: 26px;
 }
 
-.Marseille .one h2
+.Marseille .one .plus
 {
-  display: flex;
-  font-family: 'Raleway';
-  font-style: normal;
-  font-size: 18px;
-  line-height: 21px;
-  color: #000000;
-  margin-top: 40px;
+    display: flex;
+    font-family: 'Raleway';
+    font-style: normal;
+    font-size: 21px;
+    line-height: 21px;
+    color: #000000;
+    margin-top: 40px;
+    cursor: pointer;
 
 }
 
@@ -417,7 +417,7 @@ body
 }
 
 
-.Marseille .cartedeux .colonne h1
+.Marseille .cartedeux .colonne h2
 {
     margin-top: 16px;
     font-family: 'Raleway';
@@ -435,7 +435,7 @@ body
   margin-bottom: 25px;
 }
 
-.Marseille .cartedeux .colonne h2
+.Marseille .cartedeux .colonne p
 {
     width: 169px;
     font-family: 'Raleway';
@@ -460,15 +460,19 @@ body
     color: gray;
 }
 
-.activites
+
+
+
+
+
+
+.activites 
 {
     display: flex;
     width: 1337px;
-    margin-left: 280px;
     flex-direction: column;
     margin-top: 55px;
 }
-
 .activites .titre-activites
 {
     justify-content: space-between;
@@ -481,75 +485,32 @@ body
     width: 250px;
     color: #000000;
 }
-
 .card-activites
 {
-    display: flex;
-    flex-direction: row; 
+    justify-content: space-between;
+    display:flex ;
 }
-.card-activites .vieux-port
+.card-activites .h img
 {
-    filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
-    height: 444.5082092285156px;
-    width: 302px;
-    border-radius: 20px;
-    background-color: white;
-    background-image: url("image/Images Booki/activites/4_small/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg");
-    background-size: cover;
-    background-position: center;
-    height: 445px;
-    width: 302px;
-    cursor: pointer;
-}
-.card-activites .fort
-{
-    filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
-    height: 444.5082092285156px;
-    width: 302px;
-    border-radius: 20px;
-    background-color: white;
-    margin-left: 43px;
-    background-image: url("image/Images Booki/activites/4_small/paul-hermann-QFTrLdQIRhI-unsplash.jpg");
-    background-size: cover;
-    background-position: center;
-    height: 445px;
-    width: 302px;
-    cursor: pointer;
-}
-.card-activites .parc
-{
-    filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
-    height: 444.5082092285156px;
-    width: 302px;
-    left: 0px;
-    top: 0px;
-    border-radius: 20px;
-    background-color: white;
-    margin-left: 43px;
-    background-image: url("image/Images Booki/activites/4_small/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg");
-    background-size: cover;
-    background-position: center;
-    height: 445px;
-    width: 302px;
-    cursor: pointer;
-}
-.card-activites .notre-dame 
-{
-    filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
-    height: 444.5082092285156px;
-    width: 302px;
-    border-radius: 20px;
-    margin-left: 43px;
-    background-image: url("image/Images Booki/activites/4_small/florian-wehde-xW9e8gdotxI-unsplash.jpg");
-    background-size: cover;
-    background-position: center;
-    height: 445px;
-    width: 302px;
-    cursor: pointer;
+    width: 100%;
+    height: 100%;
+    border-radius: 20px 20px 0px 0px;
+    justify-content: center;
+    object-fit: cover;
 }
 
+.h
+{
+    filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
+    height: 444.5082092285156px;
+    width: 302px;
+    border-radius: 20px;
+    width: 302px;
+    cursor: pointer;
+ 
+}
 
-.activites .card-activites  h1
+.activites .card-activites  h2
 {
     display: flex;
     font-family: 'Raleway';
@@ -560,24 +521,16 @@ body
     color: #000000;
     background-color: white;
     padding: 23px;
-    width:302px;
     cursor: pointer;
     border-radius: 0px 0px 20px 20px;
+    margin-top: -5px;
 }
 
-.activites .card-activites a
-{
-  
-  display: flex;
-  margin-top: 389px;
-
-}
 
 footer
 {
     display: flex;
     width: 1339px;
-    margin-left: 280px;
     margin-top:60px ;
 }
 
@@ -613,7 +566,7 @@ footer .foot
     
 }
 
-.foot h1
+.foot h2
 {
     display: flex;
     font-family: 'Raleway';
@@ -626,7 +579,7 @@ footer .foot
     justify-content: flex-start;
 }
 
-.foot .propos 
+.foot section
 {
     display: flex;
     justify-content: space-between;
@@ -650,12 +603,31 @@ footer .foot
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
 /*tablette*/
 @media screen and (max-width: 1024px)
  {
+
+    body
+    {
+        width: 960px;  
+        margin: 0 auto;
+    }
     header
     {
-        margin-left: 20px;
+        
         flex-direction: column;   
     }
 
@@ -665,10 +637,10 @@ footer .foot
         margin-left: 350px;
     }
     
+
   .Marseille 
   { 
     flex-direction: column;
-    margin-left: 20px;
     justify-content: space-between;
   }
 
@@ -679,15 +651,14 @@ footer .foot
 
   .Marseille .second
   {
-    margin-top: 20px;
+    margin-top: 3.5%;
     width: 960px;
-    height: 258px;  
     margin-left: 0px; 
   }
-
-
-
-
+aside
+{
+    flex-flow: wrap;
+}
  .Marseille .cartedeux 
  {
     display: flex;
@@ -710,7 +681,7 @@ footer .foot
     flex-flow: none;
     width: auto;
     margin: auto;
-    margin-top: 25px;
+    margin-top: 2%;
     
  }
  .colonne .price 
@@ -737,68 +708,63 @@ footer .foot
     width: 40%;
 }
 
+.Marseille .second .cartedeux .chart
+{
+    margin-top: 47px;
+    margin-right: 43px;
+    margin-left: 46%;
+}
+
+.card-activites .h img
+{
+   
+    height: 50%;
+}
 
 .activites
 {
-    width: 960px;
-    margin-left: 20px;
-    margin-top: 20px;
+    
+    height: 45%;
 }
-.card-activites .vieux-port
+.activites .card-activites .line
 {
-    width: 200px;
-    height: 333px;
+    justify-content: end;
+    flex-direction: column;
+    padding-bottom: 7%;
+    padding-top: 15%;
+    height: 1%;
 }
-.card-activites .fort
+.activites .card-activites h2
 {
-    width: 200px;
-    height: 333px;
+    
+    padding: 0px;
+    height: 10%;
+    padding-top: 4%;
+    padding-left: 12%; 
+    width: 80%;
+    padding-right: 8%;
 }
-.card-activites .parc a
+.h
 {
-width: 100%;
-height: 100px;
+   
+   margin-right: 4%;
 }
-.activites .card-activites .parc h1
+.card-activites
 {
-padding-top: 10px;
-}
-.activites .card-activites .notre-dame h1
-{
-padding-top: 10px;
-}
-.card-activites .notre-dame a
-{
-width: 100%;
-height: 100px;
-}
-.card-activites .parc
-{
-    width: 200px;
-    height: 333px;
-}
-.card-activites .notre-dame
-{
-    width: 200px;
-    height: 333px;
-}
-
-.activites .card-activites  a
-{
-    margin-top: 255.5px;
-    display: flex;
-}
-.activites .card-activites  h1
-{
-    padding:19px;
+    justify-content: flex-start;
+    width: 75%;
 }
 
 footer
 {
-    margin-left: 20px;
+    
     width: 960px;
 }
 
+.foot
+{
+    margin-top: -187px;
+}
 .foot .marge
 {
     margin-left:95px;
@@ -812,13 +778,23 @@ footer
 
 
 
+
+
+
+
+
+
  /*mobile*/
 @media screen and (max-width: 375px)
 {
-
+body
+{
+    width: 375px;  
+    margin: 0 auto;
+}
 header
 {
-    margin-left: 0;
+    
     flex-direction: column;
 }
 nav .up
@@ -850,39 +826,39 @@ nav .up
     top: 21px;
     
 }
-
 .intro h1
 {
-    margin-top: 55px;
-    width: 25%;
+    margin-top: 10%;
     height: auto;
-    margin-left: 10px;
+    margin-left: 5%;
 }
-.intro h2
+.intro p
 {
-   margin-left: 10px;
+   margin-left: 5%;
 }
 
 .search
 {
-    margin-left: 12px;
+    margin-left: 5%;
+    margin-top: 1%;
 }
 
-nav h2
+nav .filtre
 {
     position: absolute;
     margin-bottom: 10%;
     margin-top: -22%;
     margin-left: 5.5%;
+    font-family: "raleway";
+    font-size: 18px;
 }
 
 nav ul
 {
     display: flex;
     flex-wrap: wrap;
-    width: 29%;
     flex-direction: row;
-    margin-top: 4%;
+    margin-top: 8%;
 }
 nav li a
 {
@@ -897,7 +873,6 @@ nav li a
 .info
 {
     margin-left: 20px;
-    width: 25%;
     margin-bottom: 0px;
 }
 
@@ -912,6 +887,14 @@ nav li a
     flex-direction: column-reverse;
     
 }
+
+.Marseille .second .cartedeux .chart
+{
+    margin: 0%;
+    margin-top: 13%;
+    margin-right: 7%;
+}
+
 .Marseille .carte
 {
     flex-direction: column;
@@ -922,7 +905,8 @@ nav li a
 .Marseille .one .a
 {
     justify-content: space-between;
-    width: 35%;
+    width: 39%;
+    margin-left: 1.8%;
 }
 
 .Marseille .one
@@ -952,7 +936,7 @@ nav li a
 }
 .Marseille .second
 {
-    margin-bottom: 15px;
+   margin-bottom: 15px;
    height: auto;
     
 }
@@ -962,16 +946,13 @@ nav li a
     margin-left: 20px;
     
 }
-.Marseille .second .cartedeux .chart
-{
-    margin-right: 7%;
-}
+
 .Marseille .cartedeux
 {
     display: flex;
-	flex-direction: column;
-	justify-content: space-between;
-	flex-flow: wrap;
+    flex-direction: column;
+    justify-content: space-between;
+    flex-flow: wrap;
     width: 37%;
     
 }
@@ -980,66 +961,69 @@ nav li a
     margin-left: 6%;
     width: 121%;
 }
+.plus
+{
+    margin-left: 4%;
+    margin-bottom: 1%;
+}
+
 
 .activites
 {
-   
-    margin-left: 0px;
+    width: 100%;
+    flex-flow: wrap;
 }
-
-.card-activites
+.card-activites .h img
 {
-    width: 374px;
-    flex-direction: column;
-}
-.card-activites .vieux-port
-{
-    height: 200px;
-    width: 334px;
-    margin-left:15px;
-    margin-bottom: 14px;
-}
-.card-activites .fort
-{
-    height: 200px;
-    width: 334px;
-    margin-left:15px;
-    margin-bottom: 34px;
-}
-.card-activites .parc
-{
-    height: 200px;
-    width: 334px;
-    margin-left:15px;
-    margin-bottom: 34px;
-}
-.card-activites .notre-dame
-{
-    height: 200px;
-    width: 334px;
-    margin-left:15px;
-    margin-bottom: 24px;
-}
-.activites .card-activites a
-{
-    margin-top: 144.5px;
+ height: 72%;   
 }
 .activites .titre-activites
 {
-    width: 180px;
-    margin-left: 15px;
+    margin-bottom: 10%;
 }
 
 
-footer
+.card-activites
 {
-    width: auto;
-    margin-left: 0px;
+    flex-direction: column;
+    height: 80%;
 }
+
+.h
+{
+  margin-left: 5.5%;
+    width: 120%;
+    height: 200px;
+}
+
+.activites .card-activites .line
+{
+    height: 2%;
+    padding-top: 9%;
+    padding-left: 6%;
+    padding-right: 14%;
+    padding-bottom: 3%;
+}
+	
+.activites .card-activites h2
+{
+    height: 15%;
+	padding-top: 5%;
+	padding-left: 6%;
+	padding-right: 14%;
+}
+
+
+.foot section
+{
+    flex-direction: column;
+    margin-left: 5%;
+}
+
 footer .foot
 {
-    width: 374px;
     height: auto;
+    margin-top: auto;
 }
 .foot nav
 {
