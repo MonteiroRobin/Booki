@@ -1,36 +1,49 @@
+
+/* Couleurs de la synthèse*/
+:root
+{
+    --couleur-charte:#0065FC;
+    --couleur-plus-claire:#DEEBFF;
+    --gris-background:#F2F2F2;
+}
+*
+{
+    box-sizing: content-box;
+}
 body
 {
-    background-color: #F0F2F6;
-    width: 1400px;  
+    
+    width: 100%;  
     margin: 0 auto;
+    /* Ici la largeur max de ma page*/
+    max-width: 1400px;
 }
 
 header
 {
-    width: 1400px;
-    background-color: #F0F2F6;
+    width: 100%;
 }
 
 .logo
 {
     position: absolute;
-    width: 61.09px;
+    width: 61.2px;
     height: 19px;
     top: 44px;
 }
-
+/* Barre de recherche*/
 .up
 {
     display: flex;
     flex-direction:row;
     justify-content: flex-end;
-    margin-right: 40px;
+   
 }
 
 .up .two 
 {
     text-align: center;
-    width: 152px;
+    width: 10%;
     padding: 46px 0px 0px 0px; 
     text-decoration: none;
     font-family:'Raleway';
@@ -43,18 +56,19 @@ header
 
 .up .two:hover
 {
-    border-top: #0065FC solid 2px;
-    color: #0065FC;
+    border-top: var(--couleur-charte) solid 2px;
+    color: var(--couleur-charte);
     cursor: pointer;
 
 }
 
+
+/* Texte d'introduction*/
 .intro h1
 {
     display: flex;
     font-family:'Raleway';
     font-size: 22px;
-    font-style: bold;
     line-height: 26px;
     color: black;
     height: 26px;
@@ -65,28 +79,30 @@ header
 .intro p
 {
     display: flex;
-    width: 350px;
+    width: 100%;
     height: 19px;
     font-family:'Raleway';
     font-size: 16px;
     font-style: normal;
     line-height: 19px;
+    margin: 0 auto;
 }
 
+/* Barre de recherche*/
 .search 
 {
-    background: #F2F2F2;
+    
     display: flex;
     flex-direction:row;
     align-items: center;
-    width: 300px;
+    width: 100%;
     margin-top: 20px ;
 }
 
 .search .location 
 {
     cursor: pointer;
-    background-color: rgb(197, 196, 196);
+    background-color: var(--gris-background);
     border-radius: 15px 0px 0px 15px;
     color: black;
     text-decoration: none;
@@ -104,15 +120,19 @@ header
     margin-right: 12px;
     margin-top: 2px;
     justify-content: center;
-    background-color: rgb(197, 196, 196);
+    background-color: var(--gris-background);
     font-size: 14px;
+}
+
+.search .loupe
+{
+    display: none;
 }
 
 .search p a
 {
-    padding: 5px;
-    background-color: #0065FC;
-    border: 3px solid #0065FC;
+    padding: 9px;
+    background-color: var(--couleur-charte);
     border-radius: 0px 15px 15px 0px;
     color: #F0F2F6;
     cursor: pointer;
@@ -121,11 +141,12 @@ header
 
 .search input
 {
-    border:rgb(231, 231, 231) solid 1px ;
+    border:var(--gris-background) solid 1px ;
     line-height: 31px;   
+    
 }
 
-
+/* Barre des filtres*/
 nav
 {
    display: flex;
@@ -137,7 +158,7 @@ nav ul
 {
     margin-top: 31px ;
     display: flex;
-    width: 914px;
+    width: 100%;
     align-items:center;
     flex-direction: row;
     padding-left: 0px;
@@ -151,14 +172,13 @@ nav li
 nav li a 
 {
     
-    width: 226px;
-    align-items: center;
+
     text-decoration: none;
     color: black;
     font-family:'Raleway';
     font-size: 17px;
     line-height: 20px;
-    border: solid rgb(204, 204, 204) 2px;
+    border: solid var(--gris-background) 2px;
     border-radius: 25px;
     padding-left: 5px ;
     margin-left: 20px ;
@@ -169,11 +189,11 @@ nav li a
 
 nav li a:hover
 {
-    background-color: #bbd4fa;
+    background-color: var(--couleur-plus-claire);
 }
 nav ul li i
 {
-    color: #0065FC;
+    color: var(--couleur-charte);
     margin-right: 10px;
     margin-left: 10px ;
     background: none;
@@ -191,6 +211,7 @@ nav .filtre
 
 }
 
+/*Icone information*/
 .info 
 {
     display: flex;
@@ -202,8 +223,8 @@ nav .filtre
 .info i
 {
     margin-right: 10px;
-    color: #0065FC;
-    border: 1px solid rgb(167, 166, 166);
+    color: var(--couleur-charte);
+    border: 1px solid var(--gris-background);
     border-radius: 50%;
     padding: 6px 6px 6px 6px;
     height: 12px;
@@ -220,20 +241,25 @@ font-size: 16px;
 line-height: 19px;
 color: #000000;
 }
+main
+{
+    width: 100%;
+}
 
+/*Englobe:Hébergement à Marseille & Les plus populaires*/
 .Marseille
 {
     display: flex;
     justify-content: space-between;
-    width: 1340px;
+    width: 100%;
    
 }
-
+/*Hébergement à Marseille*/
 .Marseille .one
 {
-    width: 880px;
+    width: 63%;
     border-radius: 20px;
-    background-color: rgb(212, 212, 212);
+    background-color: var(--gris-background);
     padding: 28px 40px 0px 40px;
 }
 
@@ -251,13 +277,13 @@ color: #000000;
     font-style: normal;
     font-size: 22px;
     color: #000000;
-  
+    
 }
 
 .Marseille .one img
 {
-    height: 53%;
-    width: 96.5%;
+    height: 118px;
+    width: 96%;
     border: 4px solid #FFFFFF;
     border-radius: 20px 20px 0px 0px;
 }
@@ -266,7 +292,7 @@ color: #000000;
 { 
     display:flex ;
     margin-left: 16px;
-    width: 204px;
+    width: 100%;
     height: 15px;
     font-family: 'Raleway';
     font-style: normal;
@@ -293,16 +319,16 @@ color: #000000;
 
 .Marseille .one .stars 
 {
-    width: 90px;
-    color: #0065FC;
+    width: 100%;
+    color: var(--couleur-charte);
     margin-left: 15px;
     font-size: 12px;
-    
+    display: flex;
 }
 
 .fa-grey
 {
-    color: gray;
+    color: var(--gris-background);
 }
 
 
@@ -310,10 +336,10 @@ color: #000000;
 .Marseille .one .a
 {
     filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
-    height: 199px;
-    width: 246px;
+    
+    padding-bottom: 6px;
     border-radius: 20px;
-    background: rgba(255, 255, 255, 1);
+    background-color: #FFFFFF;
     width: 30%;
     margin-top: 26px;
 }
@@ -326,28 +352,35 @@ color: #000000;
   font-size: 21px;
   line-height: 21px;
   color: #000000;
-  margin-top: 40px;
+  margin-top: 27px;
   cursor: pointer;
-
+  
 }
 
+
+/*Les plus populaires*/
+
+
+aside
+{
+    width: 30%;
+}
 .Marseille .second
 {
-    width: 420px;
+    width: 100%;
     border-radius: 20px;
-    background-color:rgb(212, 212, 212) ;
-    margin-left: 40px;
+    background-color:var(--gris-background) ;
     padding-bottom: 30px;
 }
 
 .Marseille .second .cartedeux .chart
 {
-    color: #0065FC;
+    color: var(--couleur-charte);
     display: flex;
     margin-top:46px ;
     margin-right:42px ;
+    display: flex;
     
-
 }
 .Marseille .cartedeux .titre 
 {
@@ -368,7 +401,7 @@ color: #000000;
 	flex-direction: column;
 	justify-content: space-between;
 	flex-flow: wrap;
-    width: auto;
+    width: 100%;
 }
 
 .Marseille .cartedeux a
@@ -382,10 +415,10 @@ color: #000000;
 .Marseille .b
 {
     filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
-    height: 144px;
-    width: 343px;
+    height: auto;
+    width: 100%;
     border-radius: 20px;
-    background: rgba(255, 255, 255, 1);
+    background: #FFFFFF;
     width: 80%;
     margin-top: 26px;
     margin-left: 37px;
@@ -396,22 +429,18 @@ color: #000000;
 .Marseille .second img 
 {
     object-fit: cover;
-    height: 135px;
+    height: 144px;
     width: 120px;
     border: 4px solid #FFFFFF;
     border-radius: 20px 0px 0px 20px;
 }
 
 
-.Marseille .c img
-{
-    max-width: 100%;
-    height: auto;  
-}
 
 .colonne
 {
     padding-left: 15px;
+    margin-bottom: auto;
 }
 
 
@@ -428,14 +457,14 @@ color: #000000;
 
 .colonne .price
 {
-    width: 169px;
-  height: 60px;
-  margin-bottom: 25px;
+    width: 97%;
+  height: auto;
+  margin-bottom: 50px;
 }
 
 .Marseille .cartedeux .colonne p
 {
-    width: 169px;
+    width: 100%;
     font-family: 'Raleway';
     font-style: normal;
     font-weight: 400;
@@ -446,28 +475,26 @@ color: #000000;
 
 .cartedeux .colonne .stars
 {
-    width: 90px;
-    color: #0065FC;
+    width: 100%;
+    color: var(--couleur-charte);
     margin-top: 29%;
     font-size: 12px;  
+    display: flex;
+    margin: 0 auto;
 }
 
 
 .fa-grey
 {
-    color: gray;
+    color: var(--gris-background)
 }
 
 
-
-
-
-
-
+/*Activités à Marseille*/
 .activites 
 {
     display: flex;
-    width: 1337px;
+    width: 100%;
     flex-direction: column;
     margin-top: 55px;
 }
@@ -480,31 +507,34 @@ color: #000000;
     font-weight: 700;
     font-size: 22px;
     line-height: 26px;
-    width: 250px;
+    width: 100%;
     color: #000000;
 }
 .card-activites
 {
-    justify-content: space-between;
+    
     display:flex ;
+    margin: 0 auto;
 }
 .card-activites .h img
 {
     width: 100%;
     height: 100%;
     border-radius: 20px 20px 0px 0px;
-    justify-content: center;
     object-fit: cover;
 }
+
 
 .h
 {
     filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
     height: 444.5082092285156px;
-    width: 302px;
+    width: 100%;
     border-radius: 20px;
-    width: 302px;
+    display: flex;
     cursor: pointer;
+    margin: 0 12px;
+   
  
 }
 
@@ -517,28 +547,34 @@ color: #000000;
     font-size: 16px;
     line-height: 19px;
     color: #000000;
-    background-color: white;
-    padding: 23px;
+    background-color: #FFFFFF;
+    padding: 20px 10px 10px 0px;
     cursor: pointer;
+    
     border-radius: 0px 0px 20px 20px;
     margin-top: -5px;
+    width: auto;
+    height: 6%;
+    padding-left: 8%;
 }
 
-
+/*Pied de page*/
 footer
 {
     display: flex;
-    width: 1339px;
-    margin-top:60px ;
+    width: 100%;
+    margin-top:8% ;
 }
 
 .foot
 {
-    height: 220px;
-    background-color: rgb(212, 212, 212);
+    height: auto;
+    background-color: var(--gris-background);
     display: flex;
     justify-content: space-between;
     margin-top: 25px;
+    padding-bottom: 3%;
+    width: 100%;
 }
 
 .foot .conditions
@@ -550,7 +586,7 @@ footer
 footer .foot 
 {  
     display: flex;
-    width: 1339px;
+   
 }
 
 .foot .conditions 
@@ -561,6 +597,7 @@ footer .foot
     font-family:'raleway';
     margin-top: 12px;
     justify-content: space-between;
+    width: 160%;
     
 }
 
@@ -584,6 +621,7 @@ footer .foot
     flex-direction: row;
     margin-top: 45px;
     margin-left: 70px;
+    
 }
 
 .foot nav
@@ -592,11 +630,13 @@ footer .foot
     flex-direction: column;
     justify-content: center;
     margin-bottom: auto; 
+    width: 100%;
 }
 
 .foot .marge
 {
-    margin-left: 230px;
+    margin-left: 60%;
+    width: 100%;
 }
 
 
@@ -615,33 +655,61 @@ footer .foot
 
 
 /*tablette*/
-@media screen and (max-width: 1024px)
+@media screen and (max-width: 992px)
  {
 
     body
     {
-        width: 960px;  
+        max-width: 992px;  
         margin: 0 auto;
     }
+
+
     header
     {
         
         flex-direction: column;   
     }
 
+    .up .two
+    {
+        width: 12%;
+    }
     .up
     {
-        justify-content: center;
-        margin-left: 350px;
+        justify-content: flex-end;
     }
-    
+
+
+
+    nav ul
+    {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+
+    }
+
+    nav li a 
+    {
+        display: flex;
+        width: 84%;
+        flex-flow: wrap;
+        margin-top: 10px;
+        margin-left: 16px;
+        font-size: 16px;
+      }
+
 
   .Marseille 
   { 
     flex-direction: column;
     justify-content: space-between;
   }
-
+  .Marseille .one
+  {
+    width:auto;
+  }
   .Marseille .one img
   {
     width: 97%;
@@ -650,8 +718,7 @@ footer .foot
   .Marseille .second
   {
     margin-top: 3.5%;
-    width: 960px;
-    margin-left: 0px; 
+    width: 100%;
   }
 
   .Marseille .one .plus
@@ -659,15 +726,19 @@ footer .foot
     padding-bottom: 3.5%;
   }
 
+
+
+
 aside
 {
     flex-flow: wrap;
+    width: 100%;
 }
  .Marseille .cartedeux 
  {
     display: flex;
     flex-direction: row;
-    width: 960px;
+    width: 100%;
     justify-content: space-between;
  }
 
@@ -678,24 +749,21 @@ aside
 
 .cartedeux a 
 {
-    width: 90%;
+    width: 100%;
 }
  .cartedeux .b
  {
-    flex-flow: none;
-    width: auto;
-    margin: auto;
+   
+    width: 31%;
+    margin: 0 auto;
     margin-top: 2%;
     
  }
  .colonne .price 
  {
-    width: 140px;
+    width: 100%;
  }
- .Marseille .cartedeux .colonne h2
-{
-    width: 93%;
-}
+
 .Marseille .cartedeux h1
 {
     width: 80%;
@@ -704,12 +772,12 @@ aside
 
 .cartedeux .colonne .stars
 {
-    margin-top: 44px;  
+    margin-top: 0px;  
 }
 .cartedeux .colonne
 {
     flex-direction: column;
-    width: 40%;
+    width: 46%;
 }
 
 .Marseille .second .cartedeux .chart
@@ -722,21 +790,17 @@ aside
 .card-activites .h img
 {
    
-    height: 50%;
+    height: 79%;
 }
 
-.activites
-{
-    
-    height: 45%;
-}
+
 .activites .card-activites .line
 {
     justify-content: end;
     flex-direction: column;
     padding-bottom: 7%;
-    padding-top: 15%;
-    height: 1%;
+    padding-top: 7%;
+    height: auto;
 }
 .activites .card-activites h2
 {
@@ -747,31 +811,41 @@ aside
     padding-left: 12%; 
     width: 80%;
     padding-right: 8%;
+    padding-bottom: 3%;
 }
 .h
 {
-   
-   margin-right: 4%;
+   height: auto;
+  
+ padding-left: 0px;
 }
 .card-activites
 {
     justify-content: flex-start;
-    width: 75%;
+    width: 100%;
 }
-
+.h a
+{
+    height: 82%;
+}
 footer
 {
     
-    width: 960px;
+    width: 100%;
 }
 
 .foot
 {
-    margin-top: -187px;
+    margin-top: -5%;
+}
+.foot div
+
+{
+    margin-left: 10%;
 }
 .foot .marge
 {
-    margin-left:95px;
+    margin-left:25%;
 }
 
  }
@@ -789,20 +863,18 @@ footer
 
 
  /*mobile*/
-@media screen and (max-width: 375px)
+@media screen and (max-width: 768px)
 {
-
 
 body
 {
-    width: 375px;  
+  max-width: 768px;  
     margin: 0 auto;
 }
-header
-{
-    
-    flex-direction: column;
-}
+
+
+
+
 nav .up
 {
     margin-top: 0px;
@@ -813,50 +885,105 @@ nav .up
     margin-left: 0px;
     margin-top: 88px; 
 }
+.up a 
+{
+    text-align: center;
+}
 .up .two 
 {
-    width: 187px;
+    width: 100%;
     padding-bottom: 23px;
-    border-bottom: rgb(190, 190, 190) solid 2px;
+    border-bottom: var(--gris-background) solid 2px;
+
 }
 .up .two:hover
 {
-    border-bottom: #0065FC solid 2px;
+    border-bottom: var(--couleur-charte) solid 2px;
     border-top: none;
+
 }
 .logo
 {
-    margin-left: 160px;
-    padding-bottom: 100px;
-    position: absolute;
+    margin-left: 48%;
+    position: relative;
     top: 21px;
     
 }
+
+
+
 .intro h1
 {
     margin-top: 10%;
     height: auto;
-    margin-left: 5%;
-}
-.intro p
-{
-   margin-left: 5%;
+
 }
 
+
+
+/*Barre de recherche*/
 .search
 {
     margin-left: 5%;
-    margin-top: 1%;
+    margin-top: 5%;
+    width: auto;
 }
+
+.search input
+{
+    line-height:40px;
+    width: 100%;
+}
+
+.search .loupe
+{
+    display: inline;
+    padding: 64%;
+    background-color: var(--couleur-charte);
+    border-radius: 0px 15px 15px 0px;
+    color: #F0F2F6;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.location i
+{
+    margin-top: 0px;
+    font-size: 17px;
+}
+.search  .rechercher
+{
+    display: none;
+}
+.search  .location
+{
+    cursor: pointer;
+    background-color: var(--gris-background);
+    border-radius: 15px 0px 0px 15px;
+    color: black;
+    text-decoration: none;
+    height: 18px;
+    width: 28px;
+    padding-top: 12.7px;
+    padding-left: 15px;
+    padding-bottom: 12.7px;
+  }
+
+
+
+
+
+  /*Filtres*/
 
 nav .filtre
 {
-    position: absolute;
-    margin-bottom: 10%;
-    margin-top: -22%;
+   
+   display: flex;
     margin-left: 5.5%;
     font-family: "raleway";
     font-size: 18px;
+    width: 100%;
 }
 
 nav ul
@@ -864,7 +991,7 @@ nav ul
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
-    margin-top: 8%;
+   
 }
 nav li a
 {
@@ -876,9 +1003,13 @@ nav li a
     font-size: 16px;
 }
 
+
+
+
+
 .info
 {
-    margin-left: 20px;
+    margin-left: 5%;
     margin-bottom: 0px;
 }
 
@@ -887,17 +1018,22 @@ nav li a
     margin-bottom: 13px;
 }
 
+
+
+
+
+
 .Marseille
 {
     margin-left: 0px;
     flex-direction: column-reverse;
     
 }
-
+/*Les plus populaires*/
 .Marseille .second .cartedeux .chart
 {
     margin: 0%;
-    margin-top: 13%;
+    margin-top: 6%;
     margin-right: 7%;
 }
 
@@ -907,19 +1043,21 @@ nav li a
     height: auto;
     
 }
-
+/*Herbegement à Marseille*/
+.Marseille .one
+{
+    padding-right: 0px;
+    padding-left: 0px;
+    padding-bottom: 15px;
+    width: 100%;
+}
 .Marseille .one .a
 {
     justify-content: space-between;
-    width: 39%;
-    margin-left: 1.8%;
+    width: 90%;
+    
 }
 
-.Marseille .one
-{
-    padding-left: 0px;
-    padding-bottom: 15px;
-}
 
 .Marseille .a img
 {
@@ -929,27 +1067,24 @@ nav li a
 .Marseille .a
 {
     width: auto;
-    margin-left: 30px;
+   margin: 0 auto;
 }
 
-.Marseille .one h2
+.Marseille .one .titre1
 {
-    margin-left: 30px;
+    margin-left: 5%;
 }
-.Marseille .one h1
-{
-    margin-left: 30px;
-}
+
 .Marseille .second
 {
     margin-bottom: 15px;
-   height: auto;
+    height: auto;
     
 }
 .Marseille .cartedeux .titre
 {
     width: 66%;
-    margin-left: 20px;
+   margin-left: 5%;
     
 }
 
@@ -959,18 +1094,17 @@ nav li a
 	flex-direction: column;
 	justify-content: space-between;
 	flex-flow: wrap;
-    width: 37%;
+    width: 100%;
     
 }
 .cartedeux .b
 {
-    margin-left: 6%;
-    width: 121%;
+    width: 92%;
 }
 .plus
 {
     margin-left: 4%;
-    margin-bottom: 1%;
+    margin-bottom:1%;
 }
 
 
@@ -979,45 +1113,41 @@ nav li a
     width: 100%;
     flex-flow: wrap;
 }
-.card-activites .h img
-{
- height: 72%;   
-}
+
 .activites .titre-activites
 {
     margin-bottom: 10%;
+    width: 35%;
+    margin-left: 5%;
 }
 
+
+.card-activites .h img
+{
+    width: 100%;
+    height: 57%;
+}
 
 .card-activites
 {
     flex-direction: column;
-    height: 80%;
+    height: auto;
 }
 
 .h
 {
-  margin-left: 5.5%;
-    width: 120%;
-    height: 200px;
+  margin-left: 0%;
+    width: 100%;
+   height: 19%;
+   margin-bottom: -7%;
 }
 
-.activites .card-activites .line
+.h a 
 {
-    height: 2%;
-    padding-top: 9%;
-    padding-left: 6%;
-    padding-right: 14%;
-    padding-bottom: 3%;
+    width: 93%;
+    margin: 0 auto;
+    height: auto;
 }
-.activites .card-activites h2
-{
-    height: 15%;
-padding-top: 5%;
-padding-left: 6%;
-padding-right: 14%;
-}
-
 
 .foot div
 {
@@ -1028,7 +1158,7 @@ padding-right: 14%;
 footer .foot
 {
     height: auto;
-    margin-top: auto;
+    margin-top: -100%;
 }
 .foot nav
 {
@@ -1036,13 +1166,16 @@ footer .foot
 }
 .foot .propos
 {
-    margin-left: 28px;
+    margin-left: 5%;
     flex-direction: column;
 }
 .foot .marge
 {
     margin-left: 0px;
 }
-
+.foot .conditions
+{
+    width: auto;
+}
 }
 
